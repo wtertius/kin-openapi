@@ -326,7 +326,7 @@ func (doc *T) derefPaths(ctx context.Context, paths map[string]*PathItem, refNam
 //
 // Example:
 //
-//   doc.InternalizeRefs(context.Background(), nil)
+//	doc.InternalizeRefs(context.Background(), nil)
 func (doc *T) InternalizeRefs(ctx context.Context, refNameResolver func(ref string) string) {
 	ctx = newVisited().withContext(ctx)
 
